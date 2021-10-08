@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   ProductsContainer,
   ProductWrapper,
@@ -42,7 +43,9 @@ const Project = ({ product, index }) => {
           <ProductTitle>{product.name}</ProductTitle>
           <ProductDesc>{product.desc}</ProductDesc>
           <ProductPrice>{product.price}</ProductPrice>
-          <ProductButton>{product.button}</ProductButton>
+          <a href={product.url} target="_blank">
+            <ProductButton>{product.button}</ProductButton>
+          </a>
         </ProductInfo>
       )}
     </ProductCard>

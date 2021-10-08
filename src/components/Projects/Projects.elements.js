@@ -18,18 +18,18 @@ export const ProductWrapper = styled.div`
 export const ProductCard = styled.div`
   margin: 0 2rem;
   line-height: 2;
-  width: 580px;
-  height: 580px;
+  width: 480px;
+  height: 480px;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #333131;
+  border-radius: 10px;
 `;
 
 export const ProductImg = styled.img`
-  width: 100%;
-  height: auto;
+  max-height: 300px;
   min-width: 300px;
-  border-radius: 10px;
 `;
 
 export const ProductsHeading = styled.h1`

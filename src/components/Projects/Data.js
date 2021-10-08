@@ -2,18 +2,18 @@ export const projectData = [
   {
     img: require("../../images/pomodoro.png").default,
     gif: require("../../images/pomodoro.gif").default,
-    alt: "Pizza",
-    name: "Supreme Pizza",
-    desc: "Marinara sauce, basil, italian sausage, roma tomatoes, olives, and pesto",
-    price: "$19.99",
-    button: "Add to Cart",
+    alt: "Pomodoro Clock",
+    name: "Pomodoro Clock",
+    desc: "A customizable timer to be used for pomodoro technique or any workout",
+    button: "Demo",
+    url: "https://k3lau.github.io/pomodoro-clock/"
   },
   {
-    img: require("../../images/pomodoro.png").default,
-    alt: "Pizza",
-    name: "Supreme Pizza",
-    desc: "Marinara sauce, basil, italian sausage, roma tomatoes, olives, and pesto",
-    price: "$19.99",
-    button: "Add to Cart",
+    img: require("../../images/calculator.png").default,
+    alt: "Calculator",
+    name: "Calculator",
+    desc: "A simple calculator web app",
+    button: "Demo",
+    url: "https://k3lau.github.io/fcc-js-calculator/"
   },
 ];
