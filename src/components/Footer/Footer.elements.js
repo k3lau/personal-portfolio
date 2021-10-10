@@ -12,7 +12,8 @@ export const FooterWrap = styled.div`
 `;
 
 export const FooterContainer = styled.footer`
-  background-color: #0d0909;
+background-color: #101522;
+;
 `;
 
 
