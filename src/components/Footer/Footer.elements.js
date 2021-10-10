@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Link } from 'react-router-dom';
 
 export const FooterWrap = styled.div`
   padding: 16px 24px;

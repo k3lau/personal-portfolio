@@ -1,71 +1,49 @@
 import styled from "styled-components";
 import { Container } from "../../theme/GlobalStyles";
 import { FaMagento } from "react-icons/fa";
-import { Link } from "react-router-dom";
 
 export const Nav = styled.nav`
-  background: #101522;
-  background-color: rgb(16, 21, 34);
+  background-color: transparent;
   height: 80px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
   font-style: 1.2rem;
   position: sticky;
   top: 0;
   z-index: 999;
 `;
 
-export const NavbarContainer = styled(Container)`
-  display: flex;
-  justify-content: flex-end;
-  height: 80px;
-
-  ${Container}
-`;
-
-export const NavLogo = styled(Link)`
-  color: #fff;
-  justify-self: flex-start;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 2rem;
-  display: flex;
-  align-items: center;
-`;
-
-export const NavIcon = styled(FaMagento)`
-  margin-right: 0.5rem;
-`;
-
 export const MobileIcon = styled.div`
   display: none;
   color: white;
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 780px) {
     display: block;
+    background-color: grey;
+    color: #fff;
+    opacity: 0.5;
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
+    padding: 20px;
   }
 `;
 
 export const NavMenu = styled.ul`
   display: flex;
-  align-items: center;
   list-style: none;
   text-align: center;
-  background: red;
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 780px) {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
     width: 100%;
     height: 90vh;
     position: absolute;
     top: 80px;
-    left: ${({ click }) => (click ? 0 : "-100%")};
+    left: ${({ click }) => (click ? "-100%" : 0)};
     opacity: 1;
     transition: all 0.5s ease;
     background: #101522;
@@ -76,54 +54,23 @@ export const NavItem = styled.li`
   height: 80px;
   border-bottom: 2px solid transparent;
   width: 100%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
+  cursor: pointer;
 
   &:hover {
     border-bottom: 2px solid #4b59f7;
   }
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 780px) {
     width: 100%;
-
-    &:hover {
-      border: none;
-    }
+    padding: 0.25rem 0.25rem;
+    height: 100px;
   }
 `;
 
-export const NavLinks = styled(Link)`
-  color: #fff;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  height: 100%;
-
-  @media screen and (max-width: 480x) {
-    text-align: center;
-    padding: 2rem;
-    width: 100%;
-    display: table;
-  }
-`;
-
-export const NavItemBtn = styled.li`
-  @media screen and (max-width: 480px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 120px;
-  }
-`;
-
-export const NavBtnLink = styled(Link)`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  padding: 8px 16px;
-  height: 100%;
-  width: 100%;
-  border: none;
-  outline: none;
-`;

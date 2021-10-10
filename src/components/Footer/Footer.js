@@ -19,12 +19,12 @@ import {
 import Contact from "./Contact"
 
 const Footer = () => {
-  const [showEmail, setShowEmail] = useState(false);
+  const [showEmail, setShowEmail] = useState(true);
 
   return (
     <FooterContainer>
       <FooterWrap>
-        <FooterIntro>Contact Me
+        <FooterIntro>Let's connect !
         </FooterIntro>
         <SocialMedia>
           <SocialIcons>

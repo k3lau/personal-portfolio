@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { Container, Button } from "../../theme/GlobalStyles";
 import {
   InfoSec,
@@ -51,11 +50,10 @@ const InfoSection = ({
             <Subtitle lightTextDesc={lightTextDesc}>
               <div dangerouslySetInnerHTML={description} />
             </Subtitle>
-            <Link to="/sign-up">
-              <Button label={buttonLabel} big fontBig primary={primary}>
-                {buttonLabel}
-              </Button>
-            </Link>
+
+            <Button label={buttonLabel} big fontBig primary={primary}>
+              {buttonLabel}
+            </Button>
           </InfoColumn>
         </TextWrapper>
       </Container>

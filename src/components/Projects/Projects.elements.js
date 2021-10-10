@@ -19,6 +19,7 @@ export const ProductCard = styled.div`
   margin: 10px 2rem;
   line-height: 2;
   width: 480px;
+  min-width: 300px;
   height: 480px;
   display: flex;
   justify-content: center;

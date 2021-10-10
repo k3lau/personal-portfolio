@@ -14,7 +14,19 @@ import {
   NavItemBtn,
   NavBtnLink,
 } from "./Navbar.elements";
-
+import { Link } from 'react-scroll';
+/*
+<NavItem>
+<Link to="Home" spy={true} smooth={true} duration={1000}>Home</Link>
+</NavItem>
+<NavItem>
+<Link to="Projects" spy={true} smooth={true} duration={1000}>Projects</Link>
+</NavItem>
+<NavItem>
+<Link to="Footer" spy={true} smooth={true} duration={1000}>Contact</Link>
+</NavItem>
+</NavMenu>
+*/
 const Navbar = () => {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
@@ -32,25 +44,16 @@ const Navbar = () => {
 
   window.addEventListener("resize", showButton);
   return (
-    <>
-      <IconContext.Provider value={{ color: "#fff" }}>
-        <Nav>
-          <NavbarContainer>
-            <NavMenu onClick={handleClick} click={click}>
-              <NavItem>
-                <NavLinks to="/">Home</NavLinks>
-              </NavItem>
-              <NavItem>
-                <NavLinks to="/project">Projects</NavLinks>
-              </NavItem>
-            </NavMenu>
-            <MobileIcon onClick={handleClick}>
-              {click ? <FaTimes /> : <FaBars />}
-            </MobileIcon>
-          </NavbarContainer>
-        </Nav>
-      </IconContext.Provider>
-    </>
+    <Nav>
+      <NavMenu onClick={handleClick} click={click}>
+        <Link onClick={handleClick} to="Home" spy={true} smooth={true} duration={1000}><NavItem>Home</NavItem></Link>
+        <Link onClick={handleClick} to="Projects" spy={true} smooth={true} duration={1000}><NavItem>Projects</NavItem></Link>
+        <Link onClick={handleClick} to="Footer" spy={true} smooth={true} duration={1000}><NavItem>Contact</NavItem></Link>
+      </NavMenu>
+      <MobileIcon onClick={handleClick}>
+        {click ? <FaBars /> : <FaTimes />}
+      </MobileIcon>
+    </Nav>
   );
 };
 

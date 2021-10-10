@@ -1,19 +1,19 @@
 import React from "react";
 import GlobalStyle from "./theme/GlobalStyles";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/HomePage/Home";
 import { Navbar, Footer } from "./components";
+import { Element } from "react-scroll";
 
 function App() {
   return (
-    <Router>
+    <>
       <GlobalStyle />
       <Navbar />
-      <Switch>
-        <Route path="/" exact component={Home} />
-      </Switch>
-      <Footer />
-    </Router>
+      <Home />
+      <Element id="Footer">
+        <Footer />
+      </Element>
+    </>
   );
 }
 

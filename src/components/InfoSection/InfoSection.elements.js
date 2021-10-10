@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const InfoSec = styled.div`
   color: #fff;
   background: ${({ lightBg }) => (lightBg ? "grey" : "#101522")};
-  height: 100%;
+  height: 100vh;
   width: 100%;
   @media screen and (max-width: 480px) {
     height: auto;
