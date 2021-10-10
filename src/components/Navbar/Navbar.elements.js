@@ -4,7 +4,7 @@ import { FaMagento } from "react-icons/fa";
 
 export const Nav = styled.nav`
   background-color: transparent;
-  height: 80px;
+  height: auto;
   display: flex;
   justify-content: flex-end;
   font-style: 1.2rem;
@@ -40,10 +40,9 @@ export const NavMenu = styled.ul`
     justify-content: flex-start;
     align-items: stretch;
     width: 100%;
-    height: 90vh;
+    height: auto;
     position: absolute;
-    top: 80px;
-    left: ${({ click }) => (click ? "-100%" : 0)};
+    left: ${({ click }) => (click ? 0 : "-100%")};
     opacity: 1;
     transition: all 0.5s ease;
     background: #101522;

@@ -51,7 +51,7 @@ const Navbar = () => {
         <Link onClick={handleClick} to="Footer" spy={true} smooth={true} duration={1000}><NavItem>Contact</NavItem></Link>
       </NavMenu>
       <MobileIcon onClick={handleClick}>
-        {click ? <FaBars /> : <FaTimes />}
+        {click ? <FaTimes /> : <FaBars />}
       </MobileIcon>
     </Nav>
   );
