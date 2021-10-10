@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.js": "/personal-portfolio/static/js/main.2fcd1bde.chunk.js",
-    "main.js.map": "/personal-portfolio/static/js/main.2fcd1bde.chunk.js.map",
+    "main.js": "/personal-portfolio/static/js/main.5341dfd8.chunk.js",
+    "main.js.map": "/personal-portfolio/static/js/main.5341dfd8.chunk.js.map",
     "runtime-main.js": "/personal-portfolio/static/js/runtime-main.6dff30a6.js",
     "runtime-main.js.map": "/personal-portfolio/static/js/runtime-main.6dff30a6.js.map",
-    "static/js/2.a75ee7f8.chunk.js": "/personal-portfolio/static/js/2.a75ee7f8.chunk.js",
-    "static/js/2.a75ee7f8.chunk.js.map": "/personal-portfolio/static/js/2.a75ee7f8.chunk.js.map",
+    "static/js/2.c522643b.chunk.js": "/personal-portfolio/static/js/2.c522643b.chunk.js",
+    "static/js/2.c522643b.chunk.js.map": "/personal-portfolio/static/js/2.c522643b.chunk.js.map",
     "index.html": "/personal-portfolio/index.html",
-    "static/js/2.a75ee7f8.chunk.js.LICENSE.txt": "/personal-portfolio/static/js/2.a75ee7f8.chunk.js.LICENSE.txt",
+    "static/js/2.c522643b.chunk.js.LICENSE.txt": "/personal-portfolio/static/js/2.c522643b.chunk.js.LICENSE.txt",
     "static/media/pomodoro.png": "/personal-portfolio/static/media/pomodoro.238a5b5e.png",
     "static/media/pomodoro.gif": "/personal-portfolio/static/media/pomodoro.90b211f3.gif",
     "static/media/profilePic.png": "/personal-portfolio/static/media/profilePic.8e2d4d4c.png"
   },
   "entrypoints": [
     "static/js/runtime-main.6dff30a6.js",
-    "static/js/2.a75ee7f8.chunk.js",
-    "static/js/main.2fcd1bde.chunk.js"
+    "static/js/2.c522643b.chunk.js",
+    "static/js/main.5341dfd8.chunk.js"
   ]
 }
