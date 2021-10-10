@@ -15,32 +15,29 @@ export const FooterContainer = styled.footer`
   background-color: #0d0909;
 `;
 
+
+export const SocialDescription = styled.h4`
+  font-weight: 100;
+  font-size: 1rem;
+  color:#fff;
+`;
+
+export const FooterIntro = styled.h2`
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #fff;
+`;
+
 export const SocialMedia = styled.section`
   max-width: 1300px;
   width: 100%;
-`;
-
-export const SocialMediaWrap = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  max-width: 1100px;
   margin: 16px auto 0 auto;
   @media screen and (max-width: 820px) {
     flex-direction: column;
   }
-`;
-
-export const SocialLogo = styled(Link)`
-  color: #fff;
-  justify-self: start;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 1.5rem;
-  display: flex;
-  align-items: center;
-  margin-bottom: 16px;
-  font-weight: bold;
 `;
 
 export const SocialIcons = styled.div`
@@ -53,4 +50,13 @@ export const SocialIcons = styled.div`
 export const SocialIconLink = styled.a`
   color: #fff;
   font-size: 24px;
+`;
+
+export const EmailFormButton = styled.button`
+  background-color: transparent;  
+  color: #fff;
+  font-size: 24px;
+  outline: none;
+  border: none;
+  cursor: pointer;
 `;

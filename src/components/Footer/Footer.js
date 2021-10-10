@@ -1,10 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import {
-  FaFacebook,
-  FaInstagram,
-  FaYoutube,
-  FaTwitter,
-  FaLinkedin
+  FaLinkedin,
+  FaGithub,
+  FaEnvelope
 } from 'react-icons/fa';
 import {
   FooterContainer,
@@ -13,40 +11,35 @@ import {
   SocialMediaWrap,
   SocialLogo,
   SocialIcons,
-  SocialIconLink
+  SocialIconLink,
+  EmailFormButton,
+  FooterIntro,
+  SocialDescription
 } from './Footer.elements';
+import Contact from "./Contact"
 
 const Footer = () => {
+  const [showEmail, setShowEmail] = useState(false);
+
   return (
     <FooterContainer>
       <FooterWrap>
+        <FooterIntro>Contact Me
+        </FooterIntro>
         <SocialMedia>
-          <SocialMediaWrap>
-            <SocialLogo to='/'>Pizza</SocialLogo>
-            <SocialIcons>
-              <SocialIconLink href='/' target='_blank' aria-label='Facebook'>
-                <FaFacebook />
-              </SocialIconLink>
-              <SocialIconLink href='/' target='_blank' aria-label='Instagram'>
-                <FaInstagram />
-              </SocialIconLink>
-              <SocialIconLink href='/' target='_blank' aria-label='Youtube'>
-                <FaYoutube />
-              </SocialIconLink>
-              <SocialIconLink
-                href='//www.twitter.com/briandesignz'
-                target='_blank'
-                aria-label='Twitter'
-                rel='noopener noreferrer'
-              >
-                <FaTwitter />
-              </SocialIconLink>
-              <SocialIconLink href='/' target='_blank' aria-label='Linkedin'>
-                <FaLinkedin />
-              </SocialIconLink>
-            </SocialIcons>
-          </SocialMediaWrap>
+          <SocialIcons>
+            <SocialIconLink href='https://www.linkedin.com/in/kietlau3/' target='_blank' aria-label='Linkedin'>
+              <FaLinkedin />
+            </SocialIconLink>
+            <SocialIconLink href='https://github.com/k3lau' target='_blank' aria-label='Github'>
+              <FaGithub />
+            </SocialIconLink>
+            <EmailFormButton onClick={() => setShowEmail(!showEmail)}>
+              <FaEnvelope />
+            </EmailFormButton>
+          </SocialIcons>
         </SocialMedia>
+        {showEmail ? <Contact /> : <></>}
       </FooterWrap>
     </FooterContainer>
   );
